@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 connection = sqlite3.connect("hipparcos.db")
 cursor = connection.cursor()
 # Created the cursor object to connect the database.
-# Commands
+# Commands.
 sql_command = '\
     SELECT "B-V", VAbsMag FROM photometry \
     JOIN data ON data.HIP = photometry.HIP \
